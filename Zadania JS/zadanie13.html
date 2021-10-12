@@ -1,0 +1,59 @@
+<html>
+
+
+    <head>
+
+
+        <body>
+            <div style="color:gray;font-size:50px;">
+         <script language="JavaScript">
+              var A1_blo=prompt ("Podaj pierwszą liczbę         A=","");
+              var B1_blo=prompt ("Podaj drugą liczbę            B=","");
+              alert("Wczytane liczby to:      " + "A=" + A1_blo + " B=" + B1_blo);
+              
+              var A=parseInt(A1_blo);
+              var B=parseInt(B1_blo);
+              var sumaAB = A + B;
+              var Ado3 = Math.pow(A,3);
+              var Ado2 = Math.pow(A,2);
+              var Bdo2 = Math.pow(B,2);
+              var nawias1 = 3*Ado2*B;
+              var nawias2 = 3*A*Bdo2;
+              var Bdo3 = Math.pow(B,3);
+
+
+              var wynik = Ado3 + nawias1 + nawias2 + Bdo3;
+
+              document.write('Wynik wynosi' + '(' + A + ' + ' + B + ')^3=' + A + '^3  ' + '+' + '  3*((' + A + ')^2)*(' + B + ') ' + ' + ' +  '3*(' + A + ')*((' + B + ')^2)' + B + '^3' + '  =  ' + Ado3 + '  +  ' + nawias1 + '  +  ' + nawias2 + '  +  ' + Bdo3 + '  =  ' + wynik);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </script>
+        </div>
+
+
+
+        </body>
+
+
+
+    </head>
+
+
+
+
+</html>

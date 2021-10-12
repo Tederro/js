@@ -1,0 +1,51 @@
+<html> 
+<head> 
+<title>
+ Obliczanie pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_Blonski(a,b)
+{
+ a_liczba_blonski=parseFloat(a)
+ b_liczba_blonski=parseFloat(b)
+ Pole_wynik=a_liczba_blonski*b_liczba_blonski
+ document.getElementsByName('obj')[0].value=Pole_wynik.toFixed(2); 
+ alert("Pole="+Pole_wynik.toFixed(2)+" cm2"); 
+ pokaz1.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm2"+"<br>";  
+}
+function Obwod_Blosnki(a,b)
+{
+ a_liczba_blonski=parseFloat(a)
+ b_liczba_blonski=parseFloat(b)
+ Obw_wynik=2*a_liczba_blonski+2*b_liczba_blonski
+ document.getElementsByName('pole')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole_Blonski(this.wysokosc.value,this.szerokosc.value); 
+Obwod_Blosnki(this.wysokosc.value,this.szerokosc.value);return false"> 
+Podaj a=
+<input size="6" name="wysokosc">
+Podaj b=
+<input size="6" name="szerokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="obj">
+Obw=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
