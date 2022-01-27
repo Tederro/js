@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">   
+</head>
+<body>
+
+
+    wysokosc: <input type="number" id="x">
+    dlugosc: <input type="number" id="d"><br>
+
+
+    <button onclick="javascript:oblicz()">oblicz</button>
+
+    <div id="drabina"></div>
+
+    <script>
+        var d;
+        var x;
+        var drabinalicz;
+        var drabina;
+        var a;
+        var kat;
+        var Y;
+        var Z;
+
+        function oblicz(){
+
+            x = document.getElementById('x').value;
+            d = document.getElementById('d').value;
+
+            drabinalicz=x*x+d*d;
+
+            drabina=Math.sqrt(drabinalicz);
+
+            a=d/x;
+
+           kat=Math.atan(a)*180/3.14;  
+
+           Y=Math.round(drabina*10)/10;
+           Z=Math.round(kat*10)/10;
+
+
+
+            document.getElementById('drabina').innerText = "długość drabiny to: " + Y + ", kat alfa wynosi: "+ Z +"stopni.";
+        }
+
+    </script>
+</body>
+</html>

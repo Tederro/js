@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">      
+</head>
+<body>
+
+    odległość <input type="number" id="odleglosc">
+    droga <input type="number" id="droga"><br>
+
+    <button onclick="javascript: oblicz()">oblicz</button>
+
+    <div id="kat"></div>
+    <div id="h_blo"></div>
+
+    <script>
+        function oblicz(){
+
+            var odl_blo = document.getElementById('odleglosc').value;
+            var s_blo = document.getElementById('droga').value;
+
+
+            odl_blo = parseFloat(odl_blo);
+            s_blo = parseFloat(s_blo);
+
+
+            var h_blo = (s_blo * s_blo) - (odl_blo * odl_blo);
+            h_blo = Math.sqrt(h_blo);
+
+
+            var x = h_blo / odl_blo;
+            x = Math.atan(x);
+
+            var kat = x * 180/3.14;
+
+            document.getElementById('kat').innerText = 'kat wynosi ' + kat;
+            document.getElementById('h_blo').innerText = 'wysokosc wynosi ' + h_blo;
+        }
+    </script>
+
+    
+</body>
+</html>
