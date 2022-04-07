@@ -1,0 +1,126 @@
+.header-menu{
+    background-color: rgb(162, 117, 87);
+    width: 80%;
+    height: 100px;
+    text-align: right;
+
+    float: left;
+}
+
+.header-logo{
+    background-color: rgb(162, 117, 87);
+    width: 20%;
+    height: 100px;
+
+    float: left;
+}
+
+#banner, #footer{
+    background-color: rgb(74, 45, 32);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+    clear: both;
+}
+.kawa{
+
+    
+    width: 50%;
+    height: 500px;
+    float: right;
+    
+
+    
+}
+.link1{
+
+
+    border: 2px solid rgb(12, 92, 19);
+    width: 14%;
+    height: 70%;
+    float: right;
+    margin-right: 5%
+     
+
+}
+.link2{
+
+
+    border: 2px solid rgb(12, 92, 19);
+    float: right;
+    width: 14%;
+    height: 70%;
+    margin-right: 5%
+    
+
+
+}
+.link3{
+
+
+    border: 2px solid rgb(12, 92, 19);
+    float: right;
+    width: 14%;
+    height: 70%;
+    margin-right: 5%
+
+
+}
+.link4{
+
+
+    border: 2px solid rgb(12, 92, 19);
+    float: right;
+    width: 14%;
+    height: 70%;
+    margin-right: 5%
+}
+.tekst4{
+    margin-top: 12%;
+
+    text-align: center;
+
+
+
+}
+.tekst3{
+    margin-top: 12%;
+
+    text-align: center;
+
+
+
+}
+.tekst2{
+    margin-top: 12%;
+
+    text-align: center;
+
+
+
+}
+.tekst1{
+    margin-top: 12%;
+
+    text-align: center;
+
+
+
+}
+.przycisk{
+    margin-left:45%
+
+
+}
+.stopka{
+    margin-top: 25%;
+    background-color: rgb(74, 45, 32);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+    clear: both;
+
+
+}
