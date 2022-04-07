@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style4.css">
+
+
+
+    </head>
+
+
+    <body style="background-color:rgb(162, 117, 87);">
+
+        <div id="header">
+            <div class="header-logo">
+
+                <img src="logo.png" height="100px" alt="hurtownia">
+
+            </div>
+
+            <div class="header-menu">
+
+            <div class="link1">
+                
+                <div class="tekst1">
+
+                <a href="index.html">Strona Glowna</a>
+
+                </div>
+
+            </div>
+
+            <div class="link2">
+
+                <div class="tekst2">
+                <a href="zamowienia.html">Zamowienia</a>
+                </div>
+
+            </div>
+
+            <div class="link3">
+                <div class="tekst3">
+                <a href="blog.html">Blog o kawie</a>
+                </div>
+
+            </div>
+
+            <div class="link4">
+               <div class="tekst4">
+               <a href="http://gatunki-kawy.pl/" target="_blank">Odwiedź także</a>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div id="banner">
+            <h1>Hurtownia kawy</h1>
+        </div>
+           <div class="przycisk">
+
+            <span>Podaj nr kawy:</span></br>
+            <input type="number" id="coffee"></br>
+            <span>Podaj wage w dekagramach:</span></br>
+            <input type="number" id="weight"></br>
+            <button type="zamow" onclick="oblicz()">Zamów</button>
+
+
+
+
+                <p id="res"></p>
+           </div>
+
+
+        <script>
+            function oblicz(){
+                var coffeeNr = document.getElementById('coffee').value;
+                var coffeeKg = document.getElementById('weight').value;
+                var cena;
+
+                if(coffeeNr == 1){
+                    cena = 5 * coffeeKg;
+                    document.getElementById("res").innerHTML = cena + "zł";
+
+                }
+                else if(coffeeNr == 2){
+
+                    cena = 6 * coffeeKg;
+                    document.getElementById("res").innerHTML = cena + "zł";
+
+
+
+                }
+                else if(coffeeNr == 3){
+
+                    cena = 7 * coffeeKg;
+                    document.getElementById("res").innerHTML = cena + "zł";
+
+                }
+                else{
+                    document.getElementById("res").innerHTML = "error";
+                }
+
+
+
+
+            }
+            
+        </script>
+
+
+
+
+<div class="stopka">
+    <h1>Stronę przygotował: Dawid Błoński</h1>
+</div>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
